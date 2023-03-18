@@ -10,37 +10,47 @@
 <body>
     <div class="calculator">
       <div class="output">
-        <input type="text" id="result" readonly />
+        <!--An input field that displays the calculator result-->
+        <input type="text" id="result" readonly/>
       </div>
       <div class="buttons">
-          <button onclick="memRead()"></button>
+          <button></button>
+          <!--Adds to the memory value-->
           <button onclick="memAdd()">M+</button>
+          <!--Subtracts from the memory value-->
           <button onclick="memSub()">M-</button>
           <button onclick="clearResult()">C</button>
-          <button onclick="memRead()"></button>
+
+          <button></button>
           <button onclick="appendToResult('(')">(</button>
           <button onclick="appendToResult(')')">)</button>
           <button onclick="backspace()">←</button>
+
           <button onclick="appendToResult('√')">√</button>
           <button onclick="appendToResult('pi')">π</button>
           <button onclick="appendToResult('!')">!</button>
           <button onclick="appendToResult('^')">^</button>
+
           <button onclick="appendToResult('7')">7</button>
           <button onclick="appendToResult('8')">8</button>
           <button onclick="appendToResult('9')">9</button>
           <button onclick="appendToResult('/')">÷</button>
+
           <button onclick="appendToResult('4')">4</button>
           <button onclick="appendToResult('5')">5</button>
           <button onclick="appendToResult('6')">6</button>
           <button onclick="appendToResult('*')">x</button>
+
         <button onclick="appendToResult('1')">1</button>
         <button onclick="appendToResult('2')">2</button>
         <button onclick="appendToResult('3')">3</button>
         <button onclick="appendToResult('-')">-</button>
+
         <button onclick="appendToResult('0')">0</button>
         <button onclick="appendToResult('.')">.</button>
         <button ></button>
         <button onclick="appendToResult('+')">+</button>
+        
         <button onclick="calculate()">=</button>
       </div>
     </div>
